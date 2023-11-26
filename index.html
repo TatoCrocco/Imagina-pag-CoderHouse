@@ -1,96 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>imagina</title>
-    <link rel="shortcut icon" href="./assets/icon/LOGO_IMAGINA.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./CSS/styles.css">
-</head>
+    <link
+      rel="shortcut icon"
+      href="./assets/icon/LOGO_IMAGINA.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="./assets/icon/LOGO_IMAGINA.ico" alt="logo de la empresa imagina limitada" width="50">
-            </div>
-            <div class="menu">
-                <a href="./index.html">Inicio</a>
-                <a href="./contacto.html">Contacto</a>
-                <a href="./quienes-somos.html">Quiénes Somos</a>
-                <a href="./porfolio.html">Porfolio</a>
-                <a href="./reseñas.html">Reseñas</a>
-            </div>
-        </nav>
+      <nav>
+        <div class="logo">
+          <img
+            src="./assets/icon/LOGO_IMAGINA.ico"
+            alt="logo de la empresa imagina limitada"
+            width="50"
+          />
+        </div>
+        <div class="menu">
+          <a href="./index.html">Inicio</a>
+          <a href="./contacto.html">Contacto</a>
+          <a href="./quienes-somos.html">Quiénes Somos</a>
+          <a href="./porfolio.html">Porfolio</a>
+          <a href="./reseñas.html">Reseñas</a>
+        </div>
+      </nav>
     </header>
 
-
-
     <main>
+      <div class="bienvenida">
+        Nuestra pasión es contar historias a través del lente, convirtiendo sus
+        recuerdos en arte eterno. Capturamos atmósferas únicas y fascinantes con
+        nuestra creatividad sin límites.
+      </div>
 
-        <div class="bienvenida">Nuestra pasión es contar historias a través del lente, convirtiendo sus recuerdos en
-            arte eterno. Capturamos atmósferas únicas y fascinantes con nuestra creatividad sin límites.</div>
-
-
-
-        <div class="imagenes-container">
-            <div class="foto">
-                <img src="./assets/img/CAMI-107.jpg" alt="Foto 1">
-                <h2>Título de la Foto 1</h2>
-                <p>Descripción de la Foto 1.</p>
-            </div>
-
-            <div class="foto">
-                <img src="./assets/img/CAMI-799.jpg" alt="Foto 2">
-                <h2>Título de la Foto 2</h2>
-                <p>Descripción de la Foto 2.</p>
-            </div>
-
-            <div class="foto">
-                <img src="./assets/img/S-269.jpg" alt="Foto 3">
-                <h2>Título de la Foto 3</h2>
-                <p>Descripción de la Foto 3.</p>
-            </div>
-            
-            <div class="foto">
-                <img src="./assets/img/S-65.jpg" alt="Foto 3">
-                <h2>Título de la Foto 3</h2>
-                <p>Descripción de la Foto 3.</p>
-            </div>
-
-            <div class="foto">
-                <img src="./assets/img/pre-252.jpg" alt="Foto 3">
-                <h2>Título de la Foto 3</h2>
-                <p>Descripción de la Foto 3.</p>
-            </div>
-
-            <div class="foto">
-                <img src="./assets/img/S-253.jpg" alt="Foto 3">
-                <h2>Título de la Foto 3</h2>
-                <p>Descripción de la Foto 3.</p>
-            </div>
-
-
-         
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/CAMI-107.jpg" class="d-block w-100" alt="foto de prueba">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/CAMI-799.jpg" class="d-block w-100" alt="foto de prueba">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/F (5).jpg" class="d-block w-100" alt="foto de prueba">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-    
+
+      </div>
     </main>
 
     <footer>
-        <div class="redes-sociales">
-            <a href="https://facebook.com/Imagina.vc" target="_blank">
-                <img src="./assets/icon/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com/imagina.film" target="_blank">
-                <img src="./assets/icon/instagram.png" alt="Instagram">
-            </a>
-        </div>
-        <p>&copy; 2023 Imagina Limitada. Todos los derechos reservados.</p>
+      <div class="redes-sociales">
+        <a href="https://facebook.com/Imagina.vc" target="_blank">
+          <img src="./assets/icon/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com/imagina.film" target="_blank">
+          <img src="./assets/icon/instagram.png" alt="Instagram" />
+        </a>
+      </div>
+      <p>&copy; 2023 Imagina Limitada. Todos los derechos reservados.</p>
     </footer>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
