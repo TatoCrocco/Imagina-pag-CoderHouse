@@ -319,5 +319,34 @@ section img:hover {
   width: 0;
 }
 
-/*/ carrousel /*/
+/*/ pagina reseñas grid /*/
 
+main{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+main > .tarjetas{
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+main > .tarjetas:hover{
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+main > .tarjetas > img{
+  width: 100%;
+  height: fit-content;
+}
+.img-propia{
+  width: 100%;
+  height: 400px;
+}
