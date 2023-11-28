@@ -180,18 +180,12 @@ main > .tarjetas > img{
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-* {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
 
 .body-contacto {
     display:flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(/assets/img/Foto-de-Tato-Crocco.jpg);
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(fondocontacto.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
