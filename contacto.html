@@ -1,80 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>imagina</title>
-    <link rel="shortcut icon" href="./assets/icon/LOGO_IMAGINA.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./CSS/styles.css">
-</head>
+    <link
+      rel="shortcut icon"
+      href="./assets/icon/LOGO_IMAGINA.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
 
-<body>
 
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="./assets/img/LOGO_IMAGINA.jpg" alt="logo de la empresa imagina limitada" width="50">
-            </div>
-            <div class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="quienes-somos.html">Quiénes Somos</a>
-                <a href="porfolio.html">Porfolio</a>
-                <a href="reseñas.html">Reseñas</a>
-            </div>
-        </nav>
-    </header>
-  
-
-    <main>
-        <form class="form">
-    
-            <div class="flex">
-                <label>
-                    <input class="input" type="text" placeholder="" required="">
-                    <span>Nombre</span>
-                </label>
-        
-                <label>
-                    <input class="input" type="text" placeholder="" required="">
-                    <span>Apellido</span>
-                </label>
-            </div>  
-                    
-            <label>
-                <input class="input" type="email" placeholder="" required="">
-                <span>E-mail</span>
-            </label> 
-                
-            <label>
-                <input class="input" placeholder="" type="tel" required="">
-                <span>Número de contacto</span>
-            </label>
-            <label>
-                <textarea class="input01" placeholder="" rows="3" required=""></textarea>
-                <span>Motivo de consulta</span>
-            </label>
-            
-            <button href="#" class="fancy">
-              <span class="top-key"></span>
-              <span class="text">Enviar</span>
-              <span class="bottom-key-1"></span>
-              <span class="bottom-key-2"></span>
-            </button>
-        </form>
-
-    </main>
-
-    <footer>
-        <div class="redes-sociales">
-            <a href="https://facebook.com/Imagina.vc" target="_blank"><img src="./assets/icon/facebook.png"
-                    alt="Facebook"></a>
-            <a href="https://www.instagram.com/imagina.film" target="_blank"><img src="./assets/icon/instagram.png"
-                    alt="Instagram"></a>
+  <body class="body-contacto">
+      <div class="container">
+      <div class="box-info">
+        <h1>CONTÁCTATE CON NOSOTROS</h1>
+        <div class="data">
+          <p><i class="fa-solid fa-phone"></i> +3400 660890</p>
+          <p><i class="fa-solid fa-envelope"></i> imagina.film3@gmail.com</p>
         </div>
-        <p>&copy; 2023 Imagina Limitada. Todos los derechos reservados.</p>
-    </footer>
-</body>
-
+      </div>
+      <form>
+        <div class="input-box">
+          <input type="text" placeholder="Nombre y apellido" required />
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="input-box">
+          <input type="email" required placeholder="Correo electrónico" />
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Asunto" />
+          <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+        <div class="input-box">
+          <textarea placeholder="Escribe tu mensaje..."></textarea>
+        </div>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </body>
 </html>

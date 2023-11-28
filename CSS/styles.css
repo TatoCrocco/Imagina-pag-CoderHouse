@@ -15,6 +15,21 @@ body {
   background-color: black;
 }
 
+.logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.nav-contacto{
+  background-color: rgb(43, 26, 26);
+  text-align: center;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin: 0%;
+
+}
 nav {
   background-color: black;
   text-align: center;
@@ -23,11 +38,7 @@ nav {
   align-items: center;
 }
 
-.logo img {
-  width: 50px;
-  height: auto;
-  margin-right: 20px;
-}
+
 
 .menu a {
   text-decoration: none;
@@ -70,7 +81,7 @@ main p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/* Estilos para el footer */
+
 
 /* Estilo para el footer */
 footer {
@@ -102,27 +113,6 @@ footer p {
   margin: 10px 0; 
 }
 
-/* estilos de las fotos */
-
-.imagenes-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.foto {
-  flex: 0 0 30%;
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #ccc;
-}
-
-.foto img {
-  width: 350px;
-  height: auto;
-}
-
 /* Pagina Porfolio */
 
 section {
@@ -143,207 +133,6 @@ section img:hover {
   opacity: 1;
   filter: contrast(120%);
 }
-
-/* pagina contacto */
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 350px;
-  background-color: #355891;
-  padding: 20px;
-  border-radius: 10px;
-  position: relative;
-}
-
-.message {
-  color: #355891;
-  font-size: 14px;
-}
-
-.flex {
-  display: flex;
-  width: 100%;
-  gap: 6px;
-}
-
-.form label {
-  position: relative;
-}
-
-.form label .input {
-  width: 100%;
-  padding: 10px 10px 20px 10px;
-  outline: 0;
-  border: 1px solid #355891;
-  border-radius: 5px;
-}
-
-.form label .input + span {
-  position: absolute;
-  left: 10px;
-  top: 15px;
-  color: #355891;
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
-}
-
-.form label .input:placeholder-shown + span {
-  top: 15px;
-  font-size: 0.9em;
-}
-
-.form label .input:focus + span,
-.form label .input:valid + span {
-  top: 30px;
-  font-size: 0.7em;
-  font-weight: 600;
-}
-
-.form label .input:valid + span {
-  color: green;
-}
-
-.input01 {
-  width: 100%;
-  padding: 10px 10px 20px 10px;
-  outline: 0;
-  border: 1px solid #355891;
-  border-radius: 5px;
-}
-
-.form label .input01 + span {
-  position: absolute;
-  left: 10px;
-  top: 50px;
-  color: #355891;
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
-}
-
-.form label .input01:placeholder-shown + span {
-  top: 40px;
-  font-size: 0.9em;
-}
-
-.form label .input01:focus + span,
-.form label .input01:valid + span {
-  top: 50px;
-  font-size: 0.7em;
-  font-weight: 600;
-}
-
-.form label .input01:valid + span {
-  color: green;
-}
-
-.fancy {
-  background-color: white;
-  border: 2px solid #355891;
-  border-radius: 0px;
-  box-sizing: border-box;
-  color: #355891;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 390;
-  letter-spacing: 2px;
-  margin: 0;
-  outline: none;
-  overflow: visible;
-  padding: 8px 30px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  transition: all 0.3s ease-in-out;
-  user-select: none;
-  font-size: 13px;
-}
-
-.fancy::before {
-  content: " ";
-  width: 1.7rem;
-  height: 2px;
-  background: #355891;
-  top: 50%;
-  left: 1.5em;
-  position: absolute;
-  transform: translateY(-50%);
-  transform: translateX(230%);
-  transform-origin: center;
-  transition: background 0.3s linear, width 0.3s linear;
-}
-
-.fancy .text {
-  font-size: 1.125em;
-  line-height: 1.33333em;
-  padding-left: 2em;
-  display: block;
-  text-align: left;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-  color: #355891;
-  transform: translateX(30%);
-}
-
-.fancy .top-key {
-  height: 2px;
-  width: 1.5625rem;
-  top: -2px;
-  left: 0.625rem;
-  position: absolute;
-  background: #355891;
-  transition: width 0.5s ease-out, left 0.3s ease-out;
-}
-
-.fancy .bottom-key-1 {
-  height: 2px;
-  width: 1.5625rem;
-  right: 1.875rem;
-  bottom: -2px;
-  position: absolute;
-  background: #355891;
-  transition: width 0.5s ease-out, right 0.3s ease-out;
-}
-
-.fancy .bottom-key-2 {
-  height: 2px;
-  width: 0.625rem;
-  right: 0.625rem;
-  bottom: -2px;
-  position: absolute;
-  background: #355891;
-  transition: width 0.5s ease-out, right 0.3s ease-out;
-}
-
-.fancy:hover {
-  color: #355891;
-  background: #5f82a9;
-}
-
-.fancy:hover::before {
-  width: 1.5rem;
-  background: #355891;
-}
-
-.fancy:hover .text {
-  color: white;
-  padding-left: 1.5em;
-}
-
-.fancy:hover .top-key {
-  left: -2px;
-  width: 0px;
-}
-
-.fancy:hover .bottom-key-1,
-.fancy:hover .bottom-key-2 {
-  right: 0;
-  width: 0;
-}
-
 
 /*/ pagina reseñas grid /*/
 
@@ -392,3 +181,194 @@ main > .tarjetas > img{
   width: 70%;
   max-width: 70%;
 }
+
+
+/* pagina contacto */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body-contacto {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(/assets/img/Foto-de-Tato-Crocco.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
+.container {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;
+}
+
+.box-info {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.data > p {
+    font-size: 1rem;
+}
+
+.data > p > i {
+    color:crimson;
+    margin-right: 10px;
+    font-size:25px;
+}
+
+
+
+.links {
+    display:flex;
+    gap:15px;
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: crimson;
+    text-align: center;
+    transition: .1s;
+}
+
+.links > a > i {
+    color:#fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+.input-box {
+    position:relative;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid crimson;
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+
+.input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+    color:crimson;
+}
+
+form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: crimson;
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form > button:hover,
+.links > a:hover {
+    background: rgb(172, 16, 47);
+}
+
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+ }
+
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .box-info {
+        gap:15px;
+    }
+
+    .box-info > h1 {
+        font-size: 1.5rem;
+    }
+}
+
